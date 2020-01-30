@@ -27,8 +27,8 @@ An important ratio $R_0=\frac{\beta}{\gamma}$, is the so-called [basic reproduct
 | I0          | 1             | Initial infected population                     |
 | Re0         | 0             | Initial recovered population                    |
 | S0          | 1,399,999,999 | Susceptible to infection                        |
-| R0-P1       | 4.2           | Basic reproduction rate in Phase1               |
-| R0-P2       | 0.42          | Basic reproduction rate in Phase2               |
+| R0-P1       | 2.9           | Basic reproduction rate in Phase1               |
+| R0-P2       | 0.29          | Basic reproduction rate in Phase2               |
 | gamma       | 0.1           | Recovery rate, cure duration 10 days on average |
 
 
