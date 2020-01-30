@@ -36,7 +36,7 @@ We set day 1 to be Dec. 1st 2019. On 8 December 2019, the first patient was reco
 
 It is natural to break down the whole process into two major phases - contagion phase, and control phase, separated by the transportation shutdown on 01/23/2020. This is a very approximate way of modeling as there would not be a cliff-like change in reproduction rate, but only uses as a reference in this study.
 
-In the contagion phase, while the virus is highly contagious, not sufficient protections were taken, the reproduction rate (R0-P1) is 4.2. In phase 2, the reproduction rate of the virus would not change, however, the transportation shutdown puts a significant impact on the reproduction rate (R0-P2), effectively, the rate can be deducted by 90%.
+In the contagion phase, while the virus is highly contagious, not sufficient protections were taken, the reproduction rate (R0-P1) is 2.9. This is a prorated number (compared to 4.71) after analyzing the current spread status. However, a small change on the rate could have substantial impact. In phase 2, the reproduction rate of the virus would not change, however, the transportation shutdown puts a significant impact on the reproduction rate (R0-P2), effectively, the rate can be deducted by 90%.
 
 The recovery rate, based on the reported medical records [[4]](http://www.xinhuanet.com/politics/2020-01/29/c_1125510896.htm),[[5]](http://www.xinhuanet.com/2020-01/29/c_1125510585.htm), can be estimated to be 10 days on average.
 
@@ -45,13 +45,18 @@ The recovery rate, based on the reported medical records [[4]](http://www.xinhua
 
 A simulation of 90 days was performed starting from Dec. 1th 2019 until Feb. 28th 2020.
 
-<img src="https://github.com/kealyn/Wuhan2019/blob/master/basic.png" width="800">
+<img src="https://github.com/kealyn/Wuhan2019/blob/master/vsactual.png" width="800">
 
 As noted, the infected people kept a steady increment until the transportation was shut and then followed by a drop tail. The peak number of people infected is approximately 23,000. This number could be different from the publicly announced numbers [[6]](https://news.qq.com/zt2020/page/feiyan.htm) due to a couple of reasons:
 * The result here is from a basic model and simulation, with an estimated R0, thus could be very approximate.
 * The number of confirmed cases would always be less than the number of actual infected cases
 * The incubation period of the virus varies from 2 days up to 14 days, there will be a catch up on the number of confirmed cases with the same delay
 
+The actual data of publicly announced cases are collected by the authors from [[2]](https://www.biorxiv.org/content/10.1101/2020.01.23.916726v1.full.pdf), I extended by additional days.
+
+From the above points, it is understandable there would be a delay in discovering cases - 15 days, based on empirical results. So we can deduce from the simulations:
+* The peak number of infections is around 20,000 from public report
+* The reported confirmed cases would reach this peak around 15 days later, i.e. 68 days after Dec. 1st, which is approximately Feb. 8th.
 
 I also did a quick study on the case if the transportation shut was not performed in time.
 
@@ -61,6 +66,11 @@ I also did a quick study on the case if the transportation shut was not performe
 As we could see, the model tells us there will be 5,663 people infected by the virus if the transportation shutdown was delayed only by 1 day.
 
 
+## Reference
 
-
+[1] https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model
+[2] Modelling the epidemic trend of the 2019 novel coronavirus outbreak in China, https://www.biorxiv.org/content/10.1101/2020.01.23.916726v1.full.pdf
+[3] https://www.sciencemag.org/news/2020/01/wuhan-seafood-market-may-not-be-source-novel-virus-spreading-globally
+[4] 武汉感染新型冠状病毒肺炎医护人员首批集中出院，复盘救治过程有哪些发现？http://www.xinhuanet.com/politics/2020-01/29/c_1125510896.htm
+[5] “病毒无情人有情！” 四川首例治愈病人出院高喊“武汉加油” http://www.xinhuanet.com/2020-01/29/c_1125510585.htm
 
