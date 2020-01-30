@@ -47,6 +47,10 @@ A simulation of 90 days was performed starting from Dec. 1th 2019 until Feb. 28t
 
 <img src="https://github.com/kealyn/Wuhan2019/blob/master/vsactual.png" width="800">
 
+<img src="https://github.com/kealyn/Wuhan2019/blob/master/tencent.png" width="800">
+
+_The data is collected up to Jan. 31st, 2020_
+
 As noted, the infected people kept a steady increment until the transportation was shut and then followed by a drop tail. The peak number of people infected is approximately 23,000. This number could be different from the publicly announced numbers [[6]](https://news.qq.com/zt2020/page/feiyan.htm) due to a couple of reasons:
 * The result here is from a basic model and simulation, with an estimated R0, thus could be very approximate.
 * The number of confirmed cases would always be less than the number of actual infected cases
@@ -57,6 +61,7 @@ The actual data of publicly announced cases are collected by the authors from [[
 From the above points, it is understandable there would be a delay in discovering cases - 15 days, based on empirical results. So we can deduce from the simulations:
 * The peak number of infections is around 20,000 from public report
 * The reported confirmed cases would reach this peak around 15 days later, i.e. 68 days after Dec. 1st, which is approximately Feb. 8th.
+
 
 I also did a quick study on the case if the transportation shut was not performed in time.
 
